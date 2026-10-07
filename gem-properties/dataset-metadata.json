@@ -1,0 +1,108 @@
+{
+  "title": "Gem Properties: 60 Gemstones",
+  "subtitle": "Hardness, refractive index, density and crystal system for 60 gems",
+  "description": "Physical and optical properties of 60 gem materials: species, chemical formula, crystal system, Mohs hardness, refractive index, specific gravity and colors, with a verification status for every row. From the property table in Chapter 02 of the Erebaur encyclopedia.\n\nData: Erebaur (https://erebaur.com), CC BY 4.0. https://erebaur.com/stones/\n\nThe data dictionary, sources and known limitations are in README.md.",
+  "id": "erebaur/gem-properties",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "earth science",
+    "geology",
+    "chemistry",
+    "tabular"
+  ],
+  "isPrivate": true,
+  "resources": [
+    {
+      "path": "gem-properties.csv",
+      "description": "Physical and optical properties of 60 gem materials: species, chemical formula, crystal system, Mohs hardness, refractive index, specific gravity and colors, with a verification status for every row. From the property table in Chapter 02 of the Erebaur encyclopedia.",
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "description": "Stone or variety name as used in the encyclopedia.",
+            "type": "string"
+          },
+          {
+            "name": "species",
+            "description": "Mineral species, or the material for rocks and organics.",
+            "type": "string"
+          },
+          {
+            "name": "family",
+            "description": "Grouping used by the site’s filters: diamond, corundum, beryl, chrysoberyl, garnet, tourmaline, spinel, quartz, opal, jade, other, rare or organic.",
+            "type": "string"
+          },
+          {
+            "name": "formula",
+            "description": "Chemical formula, with Unicode subscripts.",
+            "type": "string"
+          },
+          {
+            "name": "crystal_system",
+            "description": "Crystal system, following the MSA Handbook of Mineralogy. Qualifiers in brackets mark aggregates and microcrystalline material.",
+            "type": "string"
+          },
+          {
+            "name": "mohs_min",
+            "description": "Mohs hardness, low end of the range.",
+            "type": "numeric"
+          },
+          {
+            "name": "mohs_max",
+            "description": "Mohs hardness, high end of the range. Equal to mohs_min when a single value is given.",
+            "type": "numeric"
+          },
+          {
+            "name": "ri_min",
+            "description": "Refractive index, low end. Empty when the material cannot be read on a refractometer.",
+            "type": "numeric"
+          },
+          {
+            "name": "ri_max",
+            "description": "Refractive index, high end.",
+            "type": "numeric"
+          },
+          {
+            "name": "sg_min",
+            "description": "Specific gravity, low end.",
+            "type": "numeric"
+          },
+          {
+            "name": "sg_max",
+            "description": "Specific gravity, high end.",
+            "type": "numeric"
+          },
+          {
+            "name": "colors",
+            "description": "Colors the stone occurs in, as described in the encyclopedia.",
+            "type": "string"
+          },
+          {
+            "name": "verification",
+            "description": "grade_a_sourced: values from GIA, Gems & Gemology, the MSA Handbook of Mineralogy or CIBJO. grade_a_with_exceptions: grade-A values except for the field named in notes. group_range: Mohs is the range for the whole garnet group rather than the species. unverified_secondary_source: no grade-A source found; values from secondary compilations.",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "description": "What Erebaur’s editorial review records about this row specifically. Empty when it records nothing.",
+            "type": "string"
+          },
+          {
+            "name": "sources",
+            "description": "Sources in Chapter 02’s list that are about this stone or that the editorial review ties to this row, separated by \" | \". Not a field-by-field citation. Otherwise the URL of the chapter’s full source list.",
+            "type": "string"
+          },
+          {
+            "name": "erebaur_url",
+            "description": "The stone’s own page on erebaur.com, or its row in the chapter’s property table when it has none.",
+            "type": "url"
+          }
+        ]
+      }
+    }
+  ]
+}

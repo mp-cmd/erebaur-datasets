@@ -1,0 +1,98 @@
+{
+  "title": "Gem Mining Localities of the World",
+  "subtitle": "Diamond, corundum, emerald and other gem mines with status and coordinates",
+  "description": "57 gem mining localities across 31 countries, from the mine map in Chapter 05 of the Erebaur encyclopedia: diamond, corundum (ruby and sapphire), emerald and other gem deposits, with coordinates, the stones produced, operating status as of September 2026 and a coordinate-quality grade.\n\nData: Erebaur (https://erebaur.com), CC BY 4.0. https://erebaur.com/atlas/\n\nThe data dictionary, sources and known limitations are in README.md.",
+  "id": "erebaur/mining-localities",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "earth science",
+    "geology",
+    "geospatial analysis",
+    "mining"
+  ],
+  "isPrivate": true,
+  "resources": [
+    {
+      "path": "mining-localities.csv",
+      "description": "57 gem mining localities across 31 countries, from the mine map in Chapter 05 of the Erebaur encyclopedia: diamond, corundum (ruby and sapphire), emerald and other gem deposits, with coordinates, the stones produced, operating status as of September 2026 and a coordinate-quality grade.",
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "description": "Locality name as used on the map.",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "description": "Country, English short name.",
+            "type": "country"
+          },
+          {
+            "name": "iso3",
+            "description": "ISO 3166-1 alpha-3 country code.",
+            "type": "string"
+          },
+          {
+            "name": "lat",
+            "description": "Latitude in decimal degrees (WGS 84). A mine or nearest-town position; see coordinate_quality.",
+            "type": "latitude"
+          },
+          {
+            "name": "lon",
+            "description": "Longitude in decimal degrees (WGS 84).",
+            "type": "longitude"
+          },
+          {
+            "name": "group",
+            "description": "Map layer: diamond, corundum, emerald or other.",
+            "type": "string"
+          },
+          {
+            "name": "stones",
+            "description": "Stones the locality produces or produced.",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "description": "active, artisanal, closed or historic, as of September 2026.",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "description": "One-line description written for the encyclopedia.",
+            "type": "string"
+          },
+          {
+            "name": "coordinate_quality",
+            "description": "operator_stated: the operator’s own coordinate. published_coordinate: printed in a journal. approximate: a mine or town position, typically good to 0.1 to 0.3 degrees. weak: named in the editorial review as one of the least certain points.",
+            "type": "string"
+          },
+          {
+            "name": "coordinate_precision_deg",
+            "description": "Estimated precision in degrees, where the editorial review states one. Empty otherwise.",
+            "type": "numeric"
+          },
+          {
+            "name": "notes",
+            "description": "What Erebaur’s editorial review records about this locality’s coordinate, status or description. Empty when it records nothing.",
+            "type": "string"
+          },
+          {
+            "name": "sources",
+            "description": "Sources in Chapter 05’s list that are about this locality, separated by \" | \". Otherwise the URL of the chapter’s full source list.",
+            "type": "string"
+          },
+          {
+            "name": "erebaur_url",
+            "description": "The locality selected on the erebaur.com atlas map.",
+            "type": "url"
+          }
+        ]
+      }
+    }
+  ]
+}

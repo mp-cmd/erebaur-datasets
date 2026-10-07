@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below. Data: Erebaur (https://erebaur.com), CC BY 4.0."
+type: dataset
+title: "Erebaur Gem Properties"
+abstract: "Physical and optical properties of 60 gem materials: species, chemical formula, crystal system, Mohs hardness, refractive index, specific gravity and colors, with a verification status for every row. From the property table in Chapter 02 of the Erebaur encyclopedia."
+authors:
+  - name: "Erebaur"
+    website: "https://erebaur.com"
+    email: "info@erebaur.com"
+license: CC-BY-4.0
+url: "https://erebaur.com/stones/"
+# The content review this release was generated from (src/lib/seo.ts).
+version: "2026-09-19"
+keywords:
+  - "gemstones"
+  - "gemology"
+  - "mineralogy"
+  - "minerals"
+  - "crystallography"

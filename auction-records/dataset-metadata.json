@@ -1,0 +1,118 @@
+{
+  "title": "Record Auction Prices for Gems",
+  "subtitle": "Record auction sales of diamonds, rubies and pearls, with price per carat",
+  "description": "19 record auction sales of diamonds, rubies and a natural pearl, 2010 to 2023, from the records table in Chapter 14 of the Erebaur encyclopedia: price as announced and in US dollars, carat weight, computed price per carat, house, city and date. Prices include the buyer’s premium.\n\nData: Erebaur (https://erebaur.com), CC BY 4.0. https://erebaur.com/records/\n\nThe data dictionary, sources and known limitations are in README.md.",
+  "id": "erebaur/auction-records",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "finance",
+    "economics",
+    "business",
+    "tabular"
+  ],
+  "isPrivate": true,
+  "resources": [
+    {
+      "path": "auction-records.csv",
+      "description": "19 record auction sales of diamonds, rubies and a natural pearl, 2010 to 2023, from the records table in Chapter 14 of the Erebaur encyclopedia: price as announced and in US dollars, carat weight, computed price per carat, house, city and date. Prices include the buyer’s premium.",
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "description": "Name of the stone or jewel, as sold or as later known.",
+            "type": "string"
+          },
+          {
+            "name": "stone",
+            "description": "Description: color grade, cut, clarity, origin or setting, as catalogued.",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "description": "pink-diamond, blue-diamond, colorless-diamond, ruby, pearl or other, read from the description. The same categories as the erebaur.com records page.",
+            "type": "string"
+          },
+          {
+            "name": "carats",
+            "description": "Weight in carats at the time of sale.",
+            "type": "numeric"
+          },
+          {
+            "name": "price_usd_millions",
+            "description": "Price in millions of US dollars as the chapter’s table gives it, including the buyer’s premium.",
+            "type": "numeric"
+          },
+          {
+            "name": "price_usd",
+            "description": "Best available US$ total: the house’s exact US$ figure where it published one, otherwise price_usd_millions × 1,000,000.",
+            "type": "integer"
+          },
+          {
+            "name": "price_usd_basis",
+            "description": "exact_usd_total when price_usd is an exact figure published in US dollars; usd_millions_rounded when it comes from the rounded table figure.",
+            "type": "string"
+          },
+          {
+            "name": "local_price",
+            "description": "Price as the house announced it, in the currency of the sale.",
+            "type": "string"
+          },
+          {
+            "name": "local_currency",
+            "description": "ISO 4217 code of local_price: USD, CHF or HKD.",
+            "type": "string"
+          },
+          {
+            "name": "local_amount",
+            "description": "local_price as a number. Rounded when the announced figure is (for example \"CHF 45.44 million\").",
+            "type": "integer"
+          },
+          {
+            "name": "house",
+            "description": "Auction house.",
+            "type": "string"
+          },
+          {
+            "name": "city",
+            "description": "City of the sale.",
+            "type": "string"
+          },
+          {
+            "name": "sale_date",
+            "description": "Year and month of the sale, YYYY-MM.",
+            "type": "string"
+          },
+          {
+            "name": "usd_per_carat",
+            "description": "price_usd divided by carats, rounded to the dollar. Computed by Erebaur; can differ from a per-carat figure a house or GIA publishes.",
+            "type": "integer"
+          },
+          {
+            "name": "stated_record",
+            "description": "The record Chapter 14 says this sale holds, in its own words. Empty for every other row: a row is not called a record for ranking first in this table.",
+            "type": "string"
+          },
+          {
+            "name": "notes",
+            "description": "What Erebaur’s editorial review records about this row. Empty when it records nothing.",
+            "type": "string"
+          },
+          {
+            "name": "sources",
+            "description": "Sources in Chapter 14’s list that name this sale: lot records, press releases and GIA reports, separated by \" | \".",
+            "type": "string"
+          },
+          {
+            "name": "erebaur_url",
+            "description": "The sale’s row on the erebaur.com records page, which lays the records out by category.",
+            "type": "url"
+          }
+        ]
+      }
+    }
+  ]
+}

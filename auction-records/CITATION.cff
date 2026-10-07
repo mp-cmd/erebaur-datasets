@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below. Data: Erebaur (https://erebaur.com), CC BY 4.0."
+type: dataset
+title: "Erebaur Gem Auction Records"
+abstract: "19 record auction sales of diamonds, rubies and a natural pearl, 2010 to 2023, from the records table in Chapter 14 of the Erebaur encyclopedia: price as announced and in US dollars, carat weight, computed price per carat, house, city and date. Prices include the buyer’s premium."
+authors:
+  - name: "Erebaur"
+    website: "https://erebaur.com"
+    email: "info@erebaur.com"
+license: CC-BY-4.0
+url: "https://erebaur.com/records/"
+# The content review this release was generated from (src/lib/seo.ts).
+version: "2026-09-19"
+keywords:
+  - "gemstones"
+  - "diamonds"
+  - "auctions"
+  - "prices"
+  - "finance"

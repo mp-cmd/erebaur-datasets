@@ -1,0 +1,25 @@
+Erebaur open datasets
+Licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:    https://creativecommons.org/licenses/by/4.0/
+
+Attribution required on reuse:
+    Data: Erebaur (https://erebaur.com), CC BY 4.0
+
+What the license covers
+The CC BY 4.0 license covers Erebaur's compilation: the selection and arrangement of the
+rows and columns, and the descriptive text Erebaur wrote for them (descriptions, notes,
+column definitions and dataset cards).
+
+What it does not cover
+The underlying facts, such as a stone's hardness, a mine's coordinates or a published
+auction price, are not owned by anyone, and Erebaur claims no rights in them. The
+publications listed as sources keep their own rights; this license grants nothing in
+them. Where a value was taken from a third-party database (the dataset cards name
+OpenStreetMap and Mindat for a few coordinates), that database's terms continue to
+apply to it.
+
+No warranty
+The data is provided as is. It is reference material, not investment, legal or tax
+advice. Prices and mine statuses change; check dates before relying on them.

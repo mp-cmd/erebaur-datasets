@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use these datasets, please cite them as below. Data: Erebaur (https://erebaur.com), CC BY 4.0."
+type: dataset
+title: "Erebaur open datasets"
+abstract: "Gem Properties, Gem Mining Localities, Gem Auction Records: three tables from the Erebaur encyclopedia of precious stones, published under CC BY 4.0."
+authors:
+  - name: "Erebaur"
+    website: "https://erebaur.com"
+    email: "info@erebaur.com"
+license: CC-BY-4.0
+url: "https://erebaur.com/chapters/"
+repository: "https://github.com/mp-cmd/erebaur-datasets"
+# The content review this release was generated from (src/lib/seo.ts).
+version: "2026-09-19"
+keywords:
+  - "gemstones"
+  - "gemology"
+  - "mineralogy"
+  - "minerals"
+  - "crystallography"
+  - "mining"
+  - "geography"
+  - "geospatial"
+  - "diamonds"
+  - "auctions"
+  - "prices"
+  - "finance"

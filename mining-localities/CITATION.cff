@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below. Data: Erebaur (https://erebaur.com), CC BY 4.0."
+type: dataset
+title: "Erebaur Gem Mining Localities"
+abstract: "57 gem mining localities across 31 countries, from the mine map in Chapter 05 of the Erebaur encyclopedia: diamond, corundum (ruby and sapphire), emerald and other gem deposits, with coordinates, the stones produced, operating status as of September 2026 and a coordinate-quality grade."
+authors:
+  - name: "Erebaur"
+    website: "https://erebaur.com"
+    email: "info@erebaur.com"
+license: CC-BY-4.0
+url: "https://erebaur.com/atlas/"
+# The content review this release was generated from (src/lib/seo.ts).
+version: "2026-09-19"
+keywords:
+  - "gemstones"
+  - "mining"
+  - "geography"
+  - "geospatial"
+  - "diamonds"
